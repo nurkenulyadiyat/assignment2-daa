@@ -1,0 +1,57 @@
+workload,structure,operation,n,m,avg_ms,median_ms,std_ms,ns_per_op,metric,metric_total,metric_per_op,theory_per_op,check
+W1,DynamicArray,get(random i),100,10000,0.3992,0.4492,0.2017,39.92,accesses,10000,1.00,"Θ(1)",
+W1,LinkedList,get(random i),100,10000,0.2131,0.2076,0.0166,21.31,accesses,255745,25.57,"Θ(min(i, n-i)) → Θ(n) avg",
+W1,DynamicArray,get(random i),1000,10000,0.0205,0.0175,0.0060,2.05,accesses,10000,1.00,"Θ(1)",
+W1,LinkedList,get(random i),1000,10000,2.3474,2.3435,0.0229,234.74,accesses,2497236,249.72,"Θ(min(i, n-i)) → Θ(n) avg",
+W1,DynamicArray,get(random i),10000,10000,0.0337,0.0344,0.0010,3.37,accesses,10000,1.00,"Θ(1)",
+W1,LinkedList,get(random i),10000,10000,33.9865,33.5262,1.3769,3398.65,accesses,25125062,2512.51,"Θ(min(i, n-i)) → Θ(n) avg",
+W1,DynamicArray,get(random i),100000,10000,0.0556,0.0440,0.0242,5.56,accesses,10000,1.00,"Θ(1)",
+W1,LinkedList,get(random i),100000,10000,410.4906,406.1771,22.6443,41049.06,accesses,248937696,24893.77,"Θ(min(i, n-i)) → Θ(n) avg",
+W2,DynamicArray,contains(key),100,1000,0.2875,0.2618,0.0536,287.48,comparisons,73592,73.59,"Θ(1) best, Θ(n) avg/worst",hits=538
+W2,LinkedList,contains(key),100,1000,0.2687,0.2674,0.0233,268.70,comparisons,73592,73.59,"Θ(1) best, Θ(n) avg/worst",hits=538
+W2,DynamicArray,contains(key),1000,1000,2.6275,2.5667,0.2070,2627.54,comparisons,742593,742.59,"Θ(1) best, Θ(n) avg/worst",hits=505
+W2,LinkedList,contains(key),1000,1000,2.5277,2.5142,0.3534,2527.70,comparisons,742593,742.59,"Θ(1) best, Θ(n) avg/worst",hits=505
+W2,DynamicArray,contains(key),10000,1000,32.8018,35.1547,5.4698,32801.76,comparisons,7599563,7599.56,"Θ(1) best, Θ(n) avg/worst",hits=485
+W2,LinkedList,contains(key),10000,1000,24.3199,23.0239,3.1319,24319.94,comparisons,7599563,7599.56,"Θ(1) best, Θ(n) avg/worst",hits=485
+W2,DynamicArray,contains(key),100000,1000,243.4206,236.6003,10.9729,243420.60,comparisons,76330683,76330.68,"Θ(1) best, Θ(n) avg/worst",hits=470
+W2,LinkedList,contains(key),100000,1000,230.8499,232.0715,10.3849,230849.94,comparisons,76330683,76330.68,"Θ(1) best, Θ(n) avg/worst",hits=470
+W3,DynamicArray,insert @ index 0,100,1000,0.3099,0.3082,0.0039,309.92,movements,601420,601.42,"Θ(n) (shift all)",
+W3,DynamicArray,remove @ index 0,100,1000,0.3252,0.3252,0.0003,325.20,movements,599500,599.50,"Θ(n) (shift all)",restored=OK
+W3,LinkedList,insert @ index 0,100,1000,0.0270,0.0269,0.0001,26.96,accesses,1000,1.00,"Θ(1)",
+W3,LinkedList,remove @ index 0,100,1000,0.0498,0.0435,0.0095,49.84,accesses,1000,1.00,"Θ(1)",restored=OK
+W3,DynamicArray,insert @ index n/2,100,1000,0.2867,0.2858,0.0018,286.70,movements,551420,551.42,"Θ(n) (shift n/2)",
+W3,DynamicArray,remove @ index n/2,100,1000,0.3039,0.3031,0.0022,303.88,movements,549500,549.50,"Θ(n) (shift n/2)",restored=OK
+W3,LinkedList,insert @ index n/2,100,1000,0.0794,0.0848,0.0112,79.44,accesses,50999,51.00,"Θ(n) (walk to n/2)",
+W3,LinkedList,remove @ index n/2,100,1000,0.1037,0.1104,0.0154,103.72,accesses,51000,51.00,"Θ(n) (walk to n/2)",restored=OK
+W3,DynamicArray,insert @ index 0,1000,1000,0.7926,0.7124,0.1648,792.62,movements,1500524,1500.52,"Θ(n) (shift all)",
+W3,DynamicArray,remove @ index 0,1000,1000,0.7115,0.7130,0.0087,711.52,movements,1499500,1499.50,"Θ(n) (shift all)",restored=OK
+W3,LinkedList,insert @ index 0,1000,1000,0.0098,0.0085,0.0020,9.76,accesses,1000,1.00,"Θ(1)",
+W3,LinkedList,remove @ index 0,1000,1000,0.0100,0.0097,0.0006,9.98,accesses,1000,1.00,"Θ(1)",restored=OK
+W3,DynamicArray,insert @ index n/2,1000,1000,0.5554,0.5003,0.1145,555.38,movements,1000524,1000.52,"Θ(n) (shift n/2)",
+W3,DynamicArray,remove @ index n/2,1000,1000,0.5503,0.5532,0.0581,550.34,movements,999500,999.50,"Θ(n) (shift n/2)",restored=OK
+W3,LinkedList,insert @ index n/2,1000,1000,0.5403,0.4839,0.0910,540.34,accesses,500999,501.00,"Θ(n) (walk to n/2)",
+W3,LinkedList,remove @ index n/2,1000,1000,0.4853,0.4757,0.0336,485.26,accesses,501000,501.00,"Θ(n) (walk to n/2)",restored=OK
+W3,DynamicArray,insert @ index 0,10000,1000,5.8757,5.0905,1.1049,5875.72,movements,10499500,10499.50,"Θ(n) (shift all)",
+W3,DynamicArray,remove @ index 0,10000,1000,4.9007,4.8713,0.0801,4900.66,movements,10499500,10499.50,"Θ(n) (shift all)",restored=OK
+W3,LinkedList,insert @ index 0,10000,1000,0.0170,0.0144,0.0082,17.00,accesses,1000,1.00,"Θ(1)",
+W3,LinkedList,remove @ index 0,10000,1000,0.0158,0.0169,0.0027,15.80,accesses,1000,1.00,"Θ(1)",restored=OK
+W3,DynamicArray,insert @ index n/2,10000,1000,3.9917,4.3327,0.6432,3991.66,movements,5499500,5499.50,"Θ(n) (shift n/2)",
+W3,DynamicArray,remove @ index n/2,10000,1000,3.9671,4.0473,0.7513,3967.12,movements,5499500,5499.50,"Θ(n) (shift n/2)",restored=OK
+W3,LinkedList,insert @ index n/2,10000,1000,7.0203,7.0703,0.1793,7020.30,accesses,5000999,5001.00,"Θ(n) (walk to n/2)",
+W3,LinkedList,remove @ index n/2,10000,1000,6.9914,6.9562,0.7612,6991.36,accesses,5001000,5001.00,"Θ(n) (walk to n/2)",restored=OK
+W3,DynamicArray,insert @ index 0,100000,1000,69.0741,75.0142,9.5554,69074.10,movements,100499500,100499.50,"Θ(n) (shift all)",
+W3,DynamicArray,remove @ index 0,100000,1000,51.6796,51.3534,2.9785,51679.58,movements,100499500,100499.50,"Θ(n) (shift all)",restored=OK
+W3,LinkedList,insert @ index 0,100000,1000,0.0074,0.0074,0.0002,7.40,accesses,1000,1.00,"Θ(1)",
+W3,LinkedList,remove @ index 0,100000,1000,0.0039,0.0031,0.0017,3.88,accesses,1000,1.00,"Θ(1)",restored=OK
+W3,DynamicArray,insert @ index n/2,100000,1000,27.9643,25.7428,3.8838,27964.32,movements,50499500,50499.50,"Θ(n) (shift n/2)",
+W3,DynamicArray,remove @ index n/2,100000,1000,26.6378,27.1162,0.9947,26637.80,movements,50499500,50499.50,"Θ(n) (shift n/2)",restored=OK
+W3,LinkedList,insert @ index n/2,100000,1000,67.8275,67.5059,1.6180,67827.46,accesses,50000999,50001.00,"Θ(n) (walk to n/2)",
+W3,LinkedList,remove @ index n/2,100000,1000,68.2949,66.4745,2.8823,68294.88,accesses,50001000,50001.00,"Θ(n) (walk to n/2)",restored=OK
+W4,MinHeap,insert x n,100,100,0.0072,0.0072,0.0008,71.80,comparisons,194,1.94,"O(log n) worst, Θ(1) avg (random)",heap-valid=OK
+W4,MinHeap,extractMin x n,100,100,0.0089,0.0102,0.0018,89.20,comparisons,841,8.41,"Θ(log n)",sorted=OK
+W4,MinHeap,insert x n,1000,1000,0.0392,0.0365,0.0057,39.18,comparisons,2232,2.23,"O(log n) worst, Θ(1) avg (random)",heap-valid=OK
+W4,MinHeap,extractMin x n,1000,1000,0.0745,0.0634,0.0143,74.46,comparisons,14994,14.99,"Θ(log n)",sorted=OK
+W4,MinHeap,insert x n,10000,10000,0.2284,0.2421,0.0317,22.84,comparisons,22593,2.26,"O(log n) worst, Θ(1) avg (random)",heap-valid=OK
+W4,MinHeap,extractMin x n,10000,10000,1.3399,1.5413,0.3052,133.99,comparisons,216736,21.67,"Θ(log n)",sorted=OK
+W4,MinHeap,insert x n,100000,100000,1.6354,1.6472,0.2491,16.35,comparisons,227662,2.28,"O(log n) worst, Θ(1) avg (random)",heap-valid=OK
+W4,MinHeap,extractMin x n,100000,100000,17.8093,17.6704,0.2844,178.09,comparisons,2831463,28.31,"Θ(log n)",sorted=OK

@@ -1,0 +1,281 @@
+workload,structure,operation,n,run,ns
+W1,DynamicArray,get(random i),100,1,710100
+W1,DynamicArray,get(random i),100,2,469000
+W1,DynamicArray,get(random i),100,3,449200
+W1,DynamicArray,get(random i),100,4,242000
+W1,DynamicArray,get(random i),100,5,125800
+W1,LinkedList,get(random i),100,1,198700
+W1,LinkedList,get(random i),100,2,206100
+W1,LinkedList,get(random i),100,3,207700
+W1,LinkedList,get(random i),100,4,245600
+W1,LinkedList,get(random i),100,5,207600
+W1,DynamicArray,get(random i),1000,1,16500
+W1,DynamicArray,get(random i),1000,2,17300
+W1,DynamicArray,get(random i),1000,3,17500
+W1,DynamicArray,get(random i),1000,4,32500
+W1,DynamicArray,get(random i),1000,5,18600
+W1,LinkedList,get(random i),1000,1,2387500
+W1,LinkedList,get(random i),1000,2,2317700
+W1,LinkedList,get(random i),1000,3,2343500
+W1,LinkedList,get(random i),1000,4,2351300
+W1,LinkedList,get(random i),1000,5,2336800
+W1,DynamicArray,get(random i),10000,1,34400
+W1,DynamicArray,get(random i),10000,2,32600
+W1,DynamicArray,get(random i),10000,3,32400
+W1,DynamicArray,get(random i),10000,4,34500
+W1,DynamicArray,get(random i),10000,5,34800
+W1,LinkedList,get(random i),10000,1,36220600
+W1,LinkedList,get(random i),10000,2,33373900
+W1,LinkedList,get(random i),10000,3,33526200
+W1,LinkedList,get(random i),10000,4,34676000
+W1,LinkedList,get(random i),10000,5,32135800
+W1,DynamicArray,get(random i),100000,1,102900
+W1,DynamicArray,get(random i),100000,2,43600
+W1,DynamicArray,get(random i),100000,3,35600
+W1,DynamicArray,get(random i),100000,4,52000
+W1,DynamicArray,get(random i),100000,5,44000
+W1,LinkedList,get(random i),100000,1,377771000
+W1,LinkedList,get(random i),100000,2,406177100
+W1,LinkedList,get(random i),100000,3,399913000
+W1,LinkedList,get(random i),100000,4,445005000
+W1,LinkedList,get(random i),100000,5,423586800
+W2,DynamicArray,contains(key),100,1,262100
+W2,DynamicArray,contains(key),100,2,259500
+W2,DynamicArray,contains(key),100,3,261800
+W2,DynamicArray,contains(key),100,4,259300
+W2,DynamicArray,contains(key),100,5,394700
+W2,LinkedList,contains(key),100,1,291400
+W2,LinkedList,contains(key),100,2,267400
+W2,LinkedList,contains(key),100,3,243100
+W2,LinkedList,contains(key),100,4,298400
+W2,LinkedList,contains(key),100,5,243200
+W2,DynamicArray,contains(key),1000,1,2454500
+W2,DynamicArray,contains(key),1000,2,2566700
+W2,DynamicArray,contains(key),1000,3,2857600
+W2,DynamicArray,contains(key),1000,4,2376800
+W2,DynamicArray,contains(key),1000,5,2882100
+W2,LinkedList,contains(key),1000,1,2943900
+W2,LinkedList,contains(key),1000,2,2908000
+W2,LinkedList,contains(key),1000,3,2136900
+W2,LinkedList,contains(key),1000,4,2135500
+W2,LinkedList,contains(key),1000,5,2514200
+W2,DynamicArray,contains(key),10000,1,35154700
+W2,DynamicArray,contains(key),10000,2,28837800
+W2,DynamicArray,contains(key),10000,3,37580800
+W2,DynamicArray,contains(key),10000,4,24129400
+W2,DynamicArray,contains(key),10000,5,38306100
+W2,LinkedList,contains(key),10000,1,23451200
+W2,LinkedList,contains(key),10000,2,22181100
+W2,LinkedList,contains(key),10000,3,22423600
+W2,LinkedList,contains(key),10000,4,23023900
+W2,LinkedList,contains(key),10000,5,30519900
+W2,DynamicArray,contains(key),100000,1,233432400
+W2,DynamicArray,contains(key),100000,2,236600300
+W2,DynamicArray,contains(key),100000,3,254216000
+W2,DynamicArray,contains(key),100000,4,233755900
+W2,DynamicArray,contains(key),100000,5,259098400
+W2,LinkedList,contains(key),100000,1,232071500
+W2,LinkedList,contains(key),100000,2,235155400
+W2,LinkedList,contains(key),100000,3,245377100
+W2,LinkedList,contains(key),100000,4,213505700
+W2,LinkedList,contains(key),100000,5,228140000
+W3,DynamicArray,insert @ index 0,100,1,308200
+W3,DynamicArray,insert @ index 0,100,2,307300
+W3,DynamicArray,insert @ index 0,100,3,308600
+W3,DynamicArray,insert @ index 0,100,4,307800
+W3,DynamicArray,insert @ index 0,100,5,317700
+W3,DynamicArray,remove @ index 0,100,1,325200
+W3,DynamicArray,remove @ index 0,100,2,325000
+W3,DynamicArray,remove @ index 0,100,3,325500
+W3,DynamicArray,remove @ index 0,100,4,325500
+W3,DynamicArray,remove @ index 0,100,5,324800
+W3,LinkedList,insert @ index 0,100,1,27100
+W3,LinkedList,insert @ index 0,100,2,26800
+W3,LinkedList,insert @ index 0,100,3,27100
+W3,LinkedList,insert @ index 0,100,4,26900
+W3,LinkedList,insert @ index 0,100,5,26900
+W3,LinkedList,remove @ index 0,100,1,67800
+W3,LinkedList,remove @ index 0,100,2,51400
+W3,LinkedList,remove @ index 0,100,3,43500
+W3,LinkedList,remove @ index 0,100,4,43200
+W3,LinkedList,remove @ index 0,100,5,43300
+W3,DynamicArray,insert @ index n/2,100,1,285100
+W3,DynamicArray,insert @ index n/2,100,2,285500
+W3,DynamicArray,insert @ index n/2,100,3,287000
+W3,DynamicArray,insert @ index n/2,100,4,285800
+W3,DynamicArray,insert @ index n/2,100,5,290100
+W3,DynamicArray,remove @ index n/2,100,1,308000
+W3,DynamicArray,remove @ index n/2,100,2,304100
+W3,DynamicArray,remove @ index n/2,100,3,302100
+W3,DynamicArray,remove @ index n/2,100,4,302100
+W3,DynamicArray,remove @ index n/2,100,5,303100
+W3,LinkedList,insert @ index n/2,100,1,64600
+W3,LinkedList,insert @ index n/2,100,2,84800
+W3,LinkedList,insert @ index n/2,100,3,87800
+W3,LinkedList,insert @ index n/2,100,4,92500
+W3,LinkedList,insert @ index n/2,100,5,67500
+W3,LinkedList,remove @ index n/2,100,1,73000
+W3,LinkedList,remove @ index n/2,100,2,110400
+W3,LinkedList,remove @ index n/2,100,3,110300
+W3,LinkedList,remove @ index n/2,100,4,113700
+W3,LinkedList,remove @ index n/2,100,5,111200
+W3,DynamicArray,insert @ index 0,1000,1,1122100
+W3,DynamicArray,insert @ index 0,1000,2,706800
+W3,DynamicArray,insert @ index 0,1000,3,712400
+W3,DynamicArray,insert @ index 0,1000,4,708900
+W3,DynamicArray,insert @ index 0,1000,5,712900
+W3,DynamicArray,remove @ index 0,1000,1,714200
+W3,DynamicArray,remove @ index 0,1000,2,713000
+W3,DynamicArray,remove @ index 0,1000,3,725200
+W3,DynamicArray,remove @ index 0,1000,4,699000
+W3,DynamicArray,remove @ index 0,1000,5,706200
+W3,LinkedList,insert @ index 0,1000,1,13500
+W3,LinkedList,insert @ index 0,1000,2,8500
+W3,LinkedList,insert @ index 0,1000,3,8400
+W3,LinkedList,insert @ index 0,1000,4,8300
+W3,LinkedList,insert @ index 0,1000,5,10100
+W3,LinkedList,remove @ index 0,1000,1,9600
+W3,LinkedList,remove @ index 0,1000,2,9600
+W3,LinkedList,remove @ index 0,1000,3,9700
+W3,LinkedList,remove @ index 0,1000,4,11200
+W3,LinkedList,remove @ index 0,1000,5,9800
+W3,DynamicArray,insert @ index n/2,1000,1,777000
+W3,DynamicArray,insert @ index n/2,1000,2,498400
+W3,DynamicArray,insert @ index n/2,1000,3,455100
+W3,DynamicArray,insert @ index n/2,1000,4,500300
+W3,DynamicArray,insert @ index n/2,1000,5,546100
+W3,DynamicArray,remove @ index n/2,1000,1,481600
+W3,DynamicArray,remove @ index n/2,1000,2,553200
+W3,DynamicArray,remove @ index n/2,1000,3,491000
+W3,DynamicArray,remove @ index n/2,1000,4,632900
+W3,DynamicArray,remove @ index n/2,1000,5,593000
+W3,LinkedList,insert @ index n/2,1000,1,468900
+W3,LinkedList,insert @ index n/2,1000,2,632200
+W3,LinkedList,insert @ index n/2,1000,3,448700
+W3,LinkedList,insert @ index n/2,1000,4,483900
+W3,LinkedList,insert @ index n/2,1000,5,668000
+W3,LinkedList,remove @ index n/2,1000,1,475700
+W3,LinkedList,remove @ index n/2,1000,2,450900
+W3,LinkedList,remove @ index n/2,1000,3,527000
+W3,LinkedList,remove @ index n/2,1000,4,450000
+W3,LinkedList,remove @ index n/2,1000,5,522700
+W3,DynamicArray,insert @ index 0,10000,1,5090500
+W3,DynamicArray,insert @ index 0,10000,2,7769000
+W3,DynamicArray,insert @ index 0,10000,3,4935600
+W3,DynamicArray,insert @ index 0,10000,4,5082700
+W3,DynamicArray,insert @ index 0,10000,5,6500800
+W3,DynamicArray,remove @ index 0,10000,1,4842200
+W3,DynamicArray,remove @ index 0,10000,2,4889900
+W3,DynamicArray,remove @ index 0,10000,3,4843100
+W3,DynamicArray,remove @ index 0,10000,4,5056800
+W3,DynamicArray,remove @ index 0,10000,5,4871300
+W3,LinkedList,insert @ index 0,10000,1,32900
+W3,LinkedList,insert @ index 0,10000,2,9000
+W3,LinkedList,insert @ index 0,10000,3,14400
+W3,LinkedList,insert @ index 0,10000,4,14400
+W3,LinkedList,insert @ index 0,10000,5,14300
+W3,LinkedList,remove @ index 0,10000,1,15900
+W3,LinkedList,remove @ index 0,10000,2,10600
+W3,LinkedList,remove @ index 0,10000,3,18400
+W3,LinkedList,remove @ index 0,10000,4,16900
+W3,LinkedList,remove @ index 0,10000,5,17200
+W3,DynamicArray,insert @ index n/2,10000,1,4339000
+W3,DynamicArray,insert @ index n/2,10000,2,4399300
+W3,DynamicArray,insert @ index n/2,10000,3,2714000
+W3,DynamicArray,insert @ index n/2,10000,4,4173300
+W3,DynamicArray,insert @ index n/2,10000,5,4332700
+W3,DynamicArray,remove @ index n/2,10000,1,4047300
+W3,DynamicArray,remove @ index n/2,10000,2,2863000
+W3,DynamicArray,remove @ index n/2,10000,3,4686400
+W3,DynamicArray,remove @ index n/2,10000,4,3400700
+W3,DynamicArray,remove @ index n/2,10000,5,4838200
+W3,LinkedList,insert @ index n/2,10000,1,7267600
+W3,LinkedList,insert @ index n/2,10000,2,7070300
+W3,LinkedList,insert @ index n/2,10000,3,6737000
+W3,LinkedList,insert @ index n/2,10000,4,7105000
+W3,LinkedList,insert @ index n/2,10000,5,6921600
+W3,LinkedList,remove @ index n/2,10000,1,6956200
+W3,LinkedList,remove @ index n/2,10000,2,7984000
+W3,LinkedList,remove @ index n/2,10000,3,7696000
+W3,LinkedList,remove @ index n/2,10000,4,6288600
+W3,LinkedList,remove @ index n/2,10000,5,6032000
+W3,DynamicArray,insert @ index 0,100000,1,52740800
+W3,DynamicArray,insert @ index 0,100000,2,78055000
+W3,DynamicArray,insert @ index 0,100000,3,63746400
+W3,DynamicArray,insert @ index 0,100000,4,75014200
+W3,DynamicArray,insert @ index 0,100000,5,75814100
+W3,DynamicArray,remove @ index 0,100000,1,48861300
+W3,DynamicArray,remove @ index 0,100000,2,51353400
+W3,DynamicArray,remove @ index 0,100000,3,51658900
+W3,DynamicArray,remove @ index 0,100000,4,57218100
+W3,DynamicArray,remove @ index 0,100000,5,49306200
+W3,LinkedList,insert @ index 0,100000,1,7300
+W3,LinkedList,insert @ index 0,100000,2,7700
+W3,LinkedList,insert @ index 0,100000,3,7400
+W3,LinkedList,insert @ index 0,100000,4,7500
+W3,LinkedList,insert @ index 0,100000,5,7100
+W3,LinkedList,remove @ index 0,100000,1,2900
+W3,LinkedList,remove @ index 0,100000,2,2900
+W3,LinkedList,remove @ index 0,100000,3,3100
+W3,LinkedList,remove @ index 0,100000,4,7300
+W3,LinkedList,remove @ index 0,100000,5,3200
+W3,DynamicArray,insert @ index n/2,100000,1,25742800
+W3,DynamicArray,insert @ index n/2,100000,2,24688500
+W3,DynamicArray,insert @ index n/2,100000,3,34993400
+W3,DynamicArray,insert @ index n/2,100000,4,29340200
+W3,DynamicArray,insert @ index n/2,100000,5,25056700
+W3,DynamicArray,remove @ index n/2,100000,1,27378900
+W3,DynamicArray,remove @ index n/2,100000,2,24886900
+W3,DynamicArray,remove @ index n/2,100000,3,26210000
+W3,DynamicArray,remove @ index n/2,100000,4,27597000
+W3,DynamicArray,remove @ index n/2,100000,5,27116200
+W3,LinkedList,insert @ index n/2,100000,1,69424600
+W3,LinkedList,insert @ index n/2,100000,2,67018900
+W3,LinkedList,insert @ index n/2,100000,3,69793100
+W3,LinkedList,insert @ index n/2,100000,4,65394800
+W3,LinkedList,insert @ index n/2,100000,5,67505900
+W3,LinkedList,remove @ index n/2,100000,1,66174200
+W3,LinkedList,remove @ index n/2,100000,2,70227000
+W3,LinkedList,remove @ index n/2,100000,3,66474500
+W3,LinkedList,remove @ index n/2,100000,4,73039400
+W3,LinkedList,remove @ index n/2,100000,5,65559300
+W4,MinHeap,insert x n,100,1,7300
+W4,MinHeap,insert x n,100,2,7200
+W4,MinHeap,insert x n,100,3,8500
+W4,MinHeap,insert x n,100,4,6500
+W4,MinHeap,insert x n,100,5,6400
+W4,MinHeap,extractMin x n,100,1,6800
+W4,MinHeap,extractMin x n,100,2,6600
+W4,MinHeap,extractMin x n,100,3,10200
+W4,MinHeap,extractMin x n,100,4,10800
+W4,MinHeap,extractMin x n,100,5,10200
+W4,MinHeap,insert x n,1000,1,50500
+W4,MinHeap,insert x n,1000,2,36000
+W4,MinHeap,insert x n,1000,3,35900
+W4,MinHeap,insert x n,1000,4,36500
+W4,MinHeap,insert x n,1000,5,37000
+W4,MinHeap,extractMin x n,1000,1,84400
+W4,MinHeap,extractMin x n,1000,2,98000
+W4,MinHeap,extractMin x n,1000,3,63400
+W4,MinHeap,extractMin x n,1000,4,63200
+W4,MinHeap,extractMin x n,1000,5,63300
+W4,MinHeap,insert x n,10000,1,203700
+W4,MinHeap,insert x n,10000,2,181500
+W4,MinHeap,insert x n,10000,3,244200
+W4,MinHeap,insert x n,10000,4,242100
+W4,MinHeap,insert x n,10000,5,270700
+W4,MinHeap,extractMin x n,10000,1,1599300
+W4,MinHeap,extractMin x n,10000,2,968500
+W4,MinHeap,extractMin x n,10000,3,1541300
+W4,MinHeap,extractMin x n,10000,4,1623700
+W4,MinHeap,extractMin x n,10000,5,966500
+W4,MinHeap,insert x n,100000,1,1647200
+W4,MinHeap,insert x n,100000,2,1846100
+W4,MinHeap,insert x n,100000,3,1356000
+W4,MinHeap,insert x n,100000,4,1968900
+W4,MinHeap,insert x n,100000,5,1359000
+W4,MinHeap,extractMin x n,100000,1,17927500
+W4,MinHeap,extractMin x n,100000,2,17670400
+W4,MinHeap,extractMin x n,100000,3,17549700
+W4,MinHeap,extractMin x n,100000,4,17585700
+W4,MinHeap,extractMin x n,100000,5,18313100

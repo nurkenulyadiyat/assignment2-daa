@@ -1,0 +1,123 @@
+JIT warm-up pass (not recorded)...
+
+Workload 1 - Random access (m = 10000 get operations)
+  DynamicArray  get(random i)          n=100     avg=     0.023 ms  accesses   =10,000 
+
+  LinkedList    get(random i)          n=100     avg=     0.270 ms  accesses   =255,745 
+
+  DynamicArray  get(random i)          n=1000    avg=     0.022 ms  accesses   =10,000 
+
+  LinkedList    get(random i)          n=1000    avg=     3.679 ms  accesses   =2,497,236 
+
+  DynamicArray  get(random i)          n=10000   avg=     0.023 ms  accesses   =10,000 
+
+  LinkedList    get(random i)          n=10000   avg=    45.913 ms  accesses   =25,125,062 
+
+  DynamicArray  get(random i)          n=100000  avg=     0.069 ms  accesses   =10,000 
+
+  LinkedList    get(random i)          n=100000  avg=   488.167 ms  accesses   =248,937,696 
+
+
+Workload 2 - Search (m = 1000 contains operations, ~50% hits)
+  DynamicArray  contains(key)          n=100     avg=     0.148 ms  comparisons=73,592 hits=538
+
+  LinkedList    contains(key)          n=100     avg=     0.199 ms  comparisons=73,592 hits=538
+
+  DynamicArray  contains(key)          n=1000    avg=     1.038 ms  comparisons=742,593 hits=505
+
+  LinkedList    contains(key)          n=1000    avg=     1.512 ms  comparisons=742,593 hits=505
+
+  DynamicArray  contains(key)          n=10000   avg=    10.576 ms  comparisons=7,599,563 hits=485
+
+  LinkedList    contains(key)          n=10000   avg=    15.378 ms  comparisons=7,599,563 hits=485
+
+  DynamicArray  contains(key)          n=100000  avg=   109.050 ms  comparisons=76,330,683 hits=470
+
+  LinkedList    contains(key)          n=100000  avg=   162.062 ms  comparisons=76,330,683 hits=470
+
+
+Workload 3 - Insertion and removal (m = 1000 operations)
+  DynamicArray  insert @ index 0       n=100     avg=     0.330 ms  movements  =601,420 
+
+  DynamicArray  remove @ index 0       n=100     avg=     0.330 ms  movements  =599,500 restored=OK
+
+  LinkedList    insert @ index 0       n=100     avg=     0.043 ms  accesses   =1,000 
+
+  LinkedList    remove @ index 0       n=100     avg=     0.064 ms  accesses   =1,000 restored=OK
+
+  DynamicArray  insert @ index n/2     n=100     avg=     0.304 ms  movements  =551,420 
+
+  DynamicArray  remove @ index n/2     n=100     avg=     0.328 ms  movements  =549,500 restored=OK
+
+  LinkedList    insert @ index n/2     n=100     avg=     0.101 ms  accesses   =50,999 
+
+  LinkedList    remove @ index n/2     n=100     avg=     0.199 ms  accesses   =51,000 restored=OK
+
+  DynamicArray  insert @ index 0       n=1000    avg=     0.727 ms  movements  =1,500,524 
+
+  DynamicArray  remove @ index 0       n=1000    avg=     0.693 ms  movements  =1,499,500 restored=OK
+
+  LinkedList    insert @ index 0       n=1000    avg=     0.010 ms  accesses   =1,000 
+
+  LinkedList    remove @ index 0       n=1000    avg=     0.010 ms  accesses   =1,000 restored=OK
+
+  DynamicArray  insert @ index n/2     n=1000    avg=     0.470 ms  movements  =1,000,524 
+
+  DynamicArray  remove @ index n/2     n=1000    avg=     0.458 ms  movements  =999,500 restored=OK
+
+  LinkedList    insert @ index n/2     n=1000    avg=     0.823 ms  accesses   =500,999 
+
+  LinkedList    remove @ index n/2     n=1000    avg=     0.843 ms  accesses   =501,000 restored=OK
+
+  DynamicArray  insert @ index 0       n=10000   avg=     4.836 ms  movements  =10,499,500 
+
+  DynamicArray  remove @ index 0       n=10000   avg=     4.758 ms  movements  =10,499,500 restored=OK
+
+  LinkedList    insert @ index 0       n=10000   avg=     0.292 ms  accesses   =1,000 
+
+  LinkedList    remove @ index 0       n=10000   avg=     0.010 ms  accesses   =1,000 restored=OK
+
+  DynamicArray  insert @ index n/2     n=10000   avg=     3.459 ms  movements  =5,499,500 
+
+  DynamicArray  remove @ index n/2     n=10000   avg=     4.083 ms  movements  =5,499,500 restored=OK
+
+  LinkedList    insert @ index n/2     n=10000   avg=    12.239 ms  accesses   =5,000,999 
+
+  LinkedList    remove @ index n/2     n=10000   avg=     9.516 ms  accesses   =5,001,000 restored=OK
+
+  DynamicArray  insert @ index 0       n=100000  avg=    49.831 ms  movements  =100,499,500 
+
+  DynamicArray  remove @ index 0       n=100000  avg=    55.346 ms  movements  =100,499,500 restored=OK
+
+  LinkedList    insert @ index 0       n=100000  avg=     0.033 ms  accesses   =1,000 
+
+  LinkedList    remove @ index 0       n=100000  avg=     0.005 ms  accesses   =1,000 restored=OK
+
+  DynamicArray  insert @ index n/2     n=100000  avg=    25.618 ms  movements  =50,499,500 
+
+  DynamicArray  remove @ index n/2     n=100000  avg=    21.459 ms  movements  =50,499,500 restored=OK
+
+  LinkedList    insert @ index n/2     n=100000  avg=    94.667 ms  accesses   =50,000,999 
+
+  LinkedList    remove @ index n/2     n=100000  avg=    97.651 ms  accesses   =50,001,000 restored=OK
+
+
+Workload 4 - Priority processing with MinHeap (m = n)
+  MinHeap       insert x n             n=100     avg=     0.012 ms  comparisons=194 heap-valid=OK
+
+  MinHeap       extractMin x n         n=100     avg=     0.007 ms  comparisons=841 sorted=OK
+
+  MinHeap       insert x n             n=1000    avg=     0.089 ms  comparisons=2,232 heap-valid=OK
+
+  MinHeap       extractMin x n         n=1000    avg=     0.093 ms  comparisons=14,994 sorted=OK
+
+  MinHeap       insert x n             n=10000   avg=     0.252 ms  comparisons=22,593 heap-valid=OK
+
+  MinHeap       extractMin x n         n=10000   avg=     1.982 ms  comparisons=216,736 sorted=OK
+
+  MinHeap       insert x n             n=100000  avg=     2.363 ms  comparisons=227,662 heap-valid=OK
+
+  MinHeap       extractMin x n         n=100000  avg=    27.776 ms  comparisons=2,831,463 sorted=OK
+
+
+Done in 12.6 s. Results written to /home/claude/assignment-2/results/tables (sink=445627414286)

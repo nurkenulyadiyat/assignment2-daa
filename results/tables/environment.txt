@@ -1,0 +1,8 @@
+Date:        2026-09-27T12:23:06.400730
+Java:        OpenJDK 64-Bit Server VM 26.0.2.1
+OS:          Windows 11 amd64
+CPU cores:   12
+JVM args:    [-XX:+UseSerialGC, -Xms1g, -Xmx1g, -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.2\lib\idea_rt.jar=51078, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8]
+Max heap:    1023 MB
+Runs:        5 measured + 2 warm-up
+Seed:        42
