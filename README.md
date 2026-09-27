@@ -12,11 +12,11 @@ assignment-2/
 │   ├── Benchmark.java       # the four workloads, timing, counters, CSV/Markdown output
 │   └── Tests.java           # correctness tests (edge cases + comparison with java.util)
 ├── scripts/
-│   └── plot_results.py      # builds the plots from results/tables/all_results.csv
+│   ├── plot_results.py      # builds the plots from results/tables/all_results.csv
+│   └── update_readme.py     # regenerates the result tables in this README
 ├── results/
 │   ├── tables/              # all_results.csv, raw_runs.csv, one .md table per workload, environment.txt
-│   ├── plots/               # plot1 … plot4 (.png)
-│   └── benchmark_log.txt    # console output of the benchmark run
+│   └── plots/               # plot1 … plot4 (.png)
 ├── run.sh                   # compile → test → benchmark → plot
 └── README.md
 ```
